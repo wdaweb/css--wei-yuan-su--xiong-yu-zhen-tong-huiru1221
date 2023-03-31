@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bearBody {
+            width: 300px;
+            height: 300px;
+            border-radius: 250px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .bearEarLeft {
+            width: 50px;
+            height: 50px;
+            border-radius: 250px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 8%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .bearEarLeft::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 250px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bearEarRight {
+            width: 50px;
+            height: 50px;
+            border-radius: 250px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 8%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bearEarRight::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 250px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .blush {
+            width: 80px;
+            height: 80px;
+            border-radius: 250px;
+            background: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            right: 200px;
+            transform: translate(-50%, -50%);
+        }
+
+        .blush::after {
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 250px;
+            background: rgb(255, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 300px;
+            transform: translate(-50%, -50%);
+        }
+
+        .eyesleft {
+            width: 60px;
+            height: 60px;
+            border-radius: 250px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+        }
+
+        .eyesleft::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 250px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+
+        .eyesright {
+            width: 60px;
+            height: 60px;
+            border-radius: 250px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+        }
+
+        .eyesright::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 250px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+
+        .mouth {
+            width: 140px;
+            height: 90px;
+            border-radius: 100px/65px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 7;
+        }
+
+        .mouth::before {
+            content: "";
+            width: 80px;
+            height: 30px;
+            border-radius: 150px/65px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 7;
+        }
+
+        .mouth::after {
+            content: "";
+            width: 30px;
+            height: 20px;
+            border-radius: 80px/50px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+
+        .v {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .v::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: white;
+            position: absolute;
+            top: 60%;
+            left: 60%;
+            transform: skewX(-50deg);
+        }
+
+        .v::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: white;
+            position: absolute;
+            top: 60%;
+            left: -60%;
+            transform: skewX(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bearBody">
+        <div class="bearEarLeft"></div>
+        <div class="bearEarRight"></div>
+        <div class="blush"></div>
+        <div class="eyesleft"></div>
+        <div class="eyesright"></div>
+        <div class="mouth"></div>
+        <div class="v"></div>
+    </div>
+</body>
+
+</html>
